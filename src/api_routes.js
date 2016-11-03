@@ -1,6 +1,7 @@
 /**
  * Server routes at /api/
  */
+const debug = require('debug')('plantapp-iso:api');
 import {Plant, setPlantsQuery} from './data/models/Plant';
 import express from 'express';
 
