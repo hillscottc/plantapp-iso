@@ -9,10 +9,12 @@
 
 /* eslint-disable max-len */
 
+
 export const port = process.env.PORT || 3000;
 export const host = process.env.WEBSITE_HOSTNAME || `localhost:${port}`;
 
-export const databaseUrl = process.env.DATABASE_URL || 'sqlite:database.sqlite';
+export const databaseUrl =  process.env.DATABASE_URL || 'postgres:///triv_db';
+export const sqlLiteUrl = 'sqlite:database.sqlite';
 
 export const analytics = {
 
