@@ -23,7 +23,7 @@ function setPlantsQuery(qb, queryArgs) {
 
 
 const Plant = Bookshelf.Model.extend({
-  tableName: 'plant',
+  tableName: 'plantapp.plant',
 });
 
 

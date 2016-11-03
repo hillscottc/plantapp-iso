@@ -1,5 +1,11 @@
 ## React Starter Kit — "[isomorphic](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/)" web app boilerplate
 
+> http://localhost:3000/ — Node.js server (build/server.js)
+> http://localhost:3000/graphql — GraphQL server and IDE
+> http://localhost:3001/ — BrowserSync proxy with HMR, React Hot Transform
+> http://localhost:3002/ — BrowserSync control panel (UI)
+
+
 > [React Starter Kit](https://www.reactstarterkit.com) is an opinionated
 > boilerplate for web development built on top of [Node.js](https://nodejs.org/),
 > [Express](http://expressjs.com/), [GraphQL](http://graphql.org/) and
