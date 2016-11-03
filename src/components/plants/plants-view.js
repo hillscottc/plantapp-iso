@@ -76,7 +76,7 @@ class PlantsView extends Component {
     const {resetQuery, doQuery, handlePageClick} = this;
 
     return (
-      <div className="s.PlantsView">
+      <div className={s.PlantsView}>
         <QueryOpts { ...{doQuery, resetQuery} } />
         <PlantsTable { ...{plants, doQuery} } />
         <ReactPaginate previousLabel={"previous"}

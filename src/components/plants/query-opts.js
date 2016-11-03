@@ -54,7 +54,7 @@ class QueryOpts extends Component {
     const {changeCommonVal, changeFamilyVal, changeSymbolVal, changeSciVal, clickReset} = this;
 
     return (
-        <div className="QueryOpts">
+        <div className={s.QueryOpts}>
           <div>
             <label htmlFor="symbol">symbol</label>
             <input id="symbol" type="text" value={symbol} onChange={changeSymbolVal} />

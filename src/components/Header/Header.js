@@ -21,11 +21,12 @@ function Header() {
         <Navigation className={s.nav} />
         <Link className={s.brand} to="/">
           <img src={logoUrl} width="38" height="38" alt="React" />
-          <span className={s.brandTxt}>Your Company</span>
+          <span className={s.brandTxt}>hillscottc</span>
         </Link>
         <div className={s.banner}>
-          <h1 className={s.bannerTitle}>React</h1>
-          <p className={s.bannerDesc}>Complex web apps made easy</p>
+          <h1 className={s.bannerTitle}>PLANTS</h1>
+          <p className={s.bannerDesc}>driven by a Postgres database built from 90,000 records of data supplied by <a target="_blank" href="https://plants.usda.gov/dl_all.html">the USDA</a>
+          </p>
         </div>
       </div>
     </div>
