@@ -21,17 +21,10 @@ function setPlantsQuery(qb, queryArgs) {
   if (sci) qb.where('sci_name', 'like', sci);
 }
 
+class Plant extends Bookshelf.Model {
+  get tableName() { return 'plantapp.plant'; }
+}
 
-const Plant = Bookshelf.Model.extend({
-  tableName: 'plantapp.plant',
-});
-
-
-module.exports = {
-  Plant: Plant,
-  setPlantsQuery: setPlantsQuery
-};
-
-
+export default Plant;
 
 
