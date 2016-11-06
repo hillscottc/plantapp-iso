@@ -9,11 +9,13 @@ export default {
 
   async action() {
     const resp = await fetch("/api/plants/");
-    const { data } = await resp.json();
-    // const plants = await resp.json();
-    // if (!data || !data.plants) throw new Error('Failed to load plants.');
+    const json = await resp.json();
+    const { data, pagination } = json;
 
-    console.log("GOT plants:", data);
+    if (!data || !data) throw new Error('Failed to load data.');
+
+    // console.log("GOT data length:", data.length);
+    // console.log("GOT pagination:", pagination);
 
     return {
       title: 'Plants App',
