@@ -19,11 +19,16 @@ function Home() {
 }
 
 // Home.propTypes = {
-//   news: PropTypes.arrayOf(PropTypes.shape({
+//   plants_gql: PropTypes.arrayOf(PropTypes.shape({
 //     title: PropTypes.string.isRequired,
 //     link: PropTypes.string.isRequired,
 //     contentSnippet: PropTypes.string,
 //   })).isRequired,
 // };
+
+Home.propTypes = {
+  // plants_gql: PropTypes.array.isRequired,
+};
+
 
 export default withStyles(s)(Home);
