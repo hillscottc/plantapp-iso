@@ -5,7 +5,7 @@ import bookshelf from 'bookshelf';
 // import config  from '../config';
 
 const Bookshelf = bookshelf(knex(
-  {client: 'pg', connection: 'postgres:///hills120' }
+  {client: 'pg', connection: process.env.DATABASE_URL || 'postgres:///hills120' }
 ));
 
 export default Bookshelf;
