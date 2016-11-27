@@ -18,6 +18,9 @@ export const analytics = {
 
 };
 
+export const API_HOST = process.env.REACT_APP_API_HOST || 'https://sch-datahub.herokuapp.com';
+
+
 export const auth = {
 
   jwt: { secret: process.env.JWT_SECRET || 'React Starter Kit' },

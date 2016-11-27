@@ -1,5 +1,6 @@
 import querystring from 'querystring';
 import { checkHttpResp } from '../../core/utils';
+import {API_HOST} from '../../config';
 
 /*
  I can either POST or GET these search queries...
@@ -9,7 +10,7 @@ import { checkHttpResp } from '../../core/utils';
 const USE_POST = true;
 
 function fetchGet(payload) {
-  return fetch("/api/plants/?" + querystring.stringify(payload));
+  return fetch(API_HOST + "/api/plants/?" + querystring.stringify(payload));
 }
 
 function fetchPost(payload) {
@@ -18,7 +19,7 @@ function fetchPost(payload) {
     method: "POST",
     body: JSON.stringify(payload)
   };
-  return fetch("/api/plants/", fetchArgs)
+  return fetch(API_HOST + "/api/plants/", fetchArgs)
 }
 
 export function searchPlants({common, family, symbol, sci, limit=10, offset=0}) {
