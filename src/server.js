@@ -62,13 +62,6 @@ app.get('/login/facebook/return',
   }
 );
 
-
-// Enable routes with /api prefix
-const api_routes = require('./api_routes');
-app.use('/api', api_routes);
-
-
-
 //
 // Register API middleware
 // -----------------------------------------------------------------------------

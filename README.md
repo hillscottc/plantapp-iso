@@ -6,8 +6,7 @@ Initialized with the React Starter Kit boilerplate (see the [RSK README](README_
 
 - It's an [isomorphic] React app.
 - Uses [GraphQL] for some of the content.
-- I've added [Express] routes for connecting to a [PostgreSQL] database with [Bookshelf] ORM (for simplifying pagination).
-
+- The Plants data is served via an express api at [https://github.com/hillscottc/datahub]
 
 ### Run (dev)
 ```
@@ -29,7 +28,4 @@ $ git push heroku master
 ```
 
 [isomorphic]: http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/  
-[PostgreSQL]: https://www.postgresql.org/  
-[Bookshelf]: http://bookshelfjs.org/
 [GraphQL]: http://graphql.org/
-[Express]: https://expressjs.com/   
