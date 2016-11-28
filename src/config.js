@@ -5,8 +5,6 @@
 export const port = process.env.PORT || 3000;
 export const host = process.env.WEBSITE_HOSTNAME || `localhost:${port}`;
 
-export const databaseUrl =  process.env.DATABASE_URL || 'postgres:///triv_db';
-// export const databaseUrl =  process.env.DATABASE_URL || 'postgres:///hills120';
 export const sqlLiteUrl = 'sqlite:database.sqlite';
 
 export const analytics = {
