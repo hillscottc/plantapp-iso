@@ -16,7 +16,9 @@ export const analytics = {
 
 };
 
-export const API_HOST = process.env.REACT_APP_API_HOST || 'https://sch-datahub.herokuapp.com';
+// export const API_HOST = process.env.REACT_APP_API_HOST || 'https://sch-datahub.herokuapp.com';
+// export const API_HOST = 'https://sch-datahub.herokuapp.com';
+export const API_HOST = 'http://localhost:3005';
 
 
 export const auth = {
